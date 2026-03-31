@@ -13,7 +13,7 @@ profile:
     <p>136 Hoy Rd</p>
     <p>Ithaca, NY 14850, USA </p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 
 announcements:
