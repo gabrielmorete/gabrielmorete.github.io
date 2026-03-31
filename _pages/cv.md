@@ -1,12 +1,8 @@
 ---
-layout: cv
+layout: default
 permalink: /cv/
 title: CV
 nav: true
 nav_order: 5
-cv_pdf: /assets/pdf/example_pdf.pdf # you can also use external links here
-cv_format: rendercv # options: rendercv, jsonresume
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-toc:
-  sidebar: left
+redirect: https://docs.google.com/document/d/1m3o8eLE1gMBi2opolpH1iIWMBZisN2vb/edit?usp=sharing&ouid=104530892051857270115&rtpof=true&sd=true
 ---

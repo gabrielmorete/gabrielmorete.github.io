@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: 
+subtitle: gm587 [at] cornell [dot] edu
 
 profile:
   align: right
