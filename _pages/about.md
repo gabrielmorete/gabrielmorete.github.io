@@ -27,4 +27,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-### Under Construction
+I'm a PhD student at the [School of Operations Research and Information Engineering](https://www.duffield.cornell.edu/orie/) at Cornell, where I am fortunate to be advised by [Paul Gölz](https://paulgoelz.de/). 
+
+My main research interests span problems in combinatorial optimization and social choice theory.
+
+Previously, I completed my undergrad in Molecular Sciences and my master's in Computer Science at the University of São Paulo, where I was advised by [Yoshiko Wakabayashi](https://www.ime.usp.br/~yw/). 
+
