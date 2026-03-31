@@ -6,3 +6,5 @@ nav_order: 1
 permalink: /cv/
 redirect: https://docs.google.com/document/d/1m3o8eLE1gMBi2opolpH1iIWMBZisN2vb/edit?usp=sharing&ouid=104530892051857270115&rtpof=true&sd=true
 ---
+
+Redirecting... If it does not work, click [here](https://docs.google.com/document/d/1m3o8eLE1gMBi2opolpH1iIWMBZisN2vb/edit).
