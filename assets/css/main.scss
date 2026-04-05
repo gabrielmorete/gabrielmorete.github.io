@@ -37,3 +37,35 @@
 @use "font-awesome/brands";
 @use "font-awesome/solid";
 @use "font-awesome/regular";
+
+.pubnews-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5rem;
+  row-gap: 0;
+  margin-top: 0.5rem;
+}
+
+.pubnews-col {
+  min-width: 0;
+}
+
+.pubnews-heading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.pub-entry,
+.news-entry {
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .pubnews-grid {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 2rem;
+  }
+}
