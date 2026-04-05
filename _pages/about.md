@@ -8,11 +8,7 @@ profile:
   align: right
   image: me.jpg
   image_circular: false
-  more_info: >
-    <p>294 Rhodes Hall</p>
-    <p>136 Hoy Rd</p>
-    <p>Ithaca, NY 14850, USA </p>
-    <p>gm587 [at] cornell [dot] edu </p>
+  more_info:
 
 selected_papers: false
 social: false
@@ -33,6 +29,8 @@ I'm a second year PhD student at the [School of Operations Research and Informat
 My main research interests includes problems in combinatorial optimization and social choice theory.
 
 Previously, I completed my undergrad in Molecular Sciences and my master's in Computer Science at the University of São Paulo, where I was advised by [Yoshiko Wakabayashi](https://www.ime.usp.br/~yw/).
+
+*Contact:* 294 Rhodes Hall, 136 Hoy Rd, Ithaca, NY 14850, USA · gm587 [at] cornell [dot] edu
 
 <div class="home-divider"></div>
 
