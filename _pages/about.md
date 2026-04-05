@@ -34,7 +34,6 @@ My main research interests includes problems in combinatorial optimization and s
 
 Previously, I completed my undergrad in Molecular Sciences and my master's in Computer Science at the University of São Paulo, where I was advised by [Yoshiko Wakabayashi](https://www.ime.usp.br/~yw/).
 
-<div style="clear: both;"></div>
-<hr style="border: 0; border-top: 1px solid #d9d9d9; margin: 1.75rem 0 2rem 0;">
+<div class="home-divider"></div>
 
 {% include publications_news.liquid %}

@@ -1,10 +1,8 @@
-<div style="clear: both;"></div>
-<hr style="border: 0; border-top: 1px solid #d9d9d9; margin: 1.75rem 0 2rem 0;">
-
 <div class="pubnews-grid">
   <div class="pubnews-col">
-    <div class="pubnews-heading">Papers</div>
+    <div class="pubnews-heading">Publications</div>
 
+    <div class="pubnews-subheading">Papers</div>
     {% for item in site.data.publications.papers %}
       <div class="pub-entry">
         {% assign lines = item.text | split: "
@@ -19,8 +17,7 @@
     {% endfor %}
 
     {% if site.data.publications.thesis %}
-      <div class="pubnews-heading" style="margin-top: 2rem;">Thesis</div>
-
+      <div class="pubnews-subheading">Thesis</div>
       {% for item in site.data.publications.thesis %}
         <div class="pub-entry">
           {% assign lines = item.text | split: "
@@ -35,8 +32,7 @@
       {% endfor %}
     {% endif %}
 
-    <div class="pubnews-heading" style="margin-top: 2rem;">Extended Abstracts</div>
-
+    <div class="pubnews-subheading">Extended Abstracts</div>
     {% for item in site.data.publications.extended_abstracts %}
       <div class="pub-entry">
         {% assign lines = item.text | split: "
