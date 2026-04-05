@@ -30,7 +30,7 @@ My recent work addresses the problem of selecting citizens' assemblies while max
 Previously, I completed my undergrad in Molecular Sciences and my master's in Computer Science at the University of São Paulo. During my master's, I was advised by [Yoshiko Wakabayashi](https://www.ime.usp.br/~yw/). Also, I spent a semester at the University of Waterloo working with [Joseph Cheriyan](https://www.math.uwaterloo.ca/~jcheriya/) on approximation algorithms for the 2-edge-connected spanning subgraph problem.
 
 <div style="line-height: 1.4;">
-  **Contact Information:**
+  <strong>Contact Information:</strong>
   <div style="margin-left: 1.2em;">
   294 Rhodes Hall<br>
   136 Hoy Rd<br>
