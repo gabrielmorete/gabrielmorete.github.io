@@ -13,12 +13,11 @@ layout: default
     </h1>
     <p class="desc">{{ page.subtitle }}</p>
   </header>
-
   <article>
-    <div style="padding-left: 2cm; padding-right: 2cm;">
+    <div style="padding-left: 0.8cm; padding-right: 0.8cm;">
     {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}" style="margin-right: 2cm;">
-        <div style="width: 65%;">
+      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+        <div style="width: 78%;">
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}
@@ -40,12 +39,10 @@ layout: default
         </div>
       </div>
     {% endif %}
-
     <div class="clearfix">{{ content }}</div>
     </div>
-    <hr style="border: none; border-top: 1px solid #ddd; margin: 2rem 0;">
+    <hr style="border: none; border-top: 1px solid #ddd; margin: 2rem 0.8cm;">
     <div style="padding-left: 1.5cm;">
-
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
@@ -53,7 +50,6 @@ layout: default
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
-
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2>
@@ -61,7 +57,6 @@ layout: default
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}
-
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
@@ -69,16 +64,13 @@ layout: default
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
-
     <!-- Social -->
     {% if page.social %}
       <div class="social">
         <div class="contact-icons">{% social_links %}</div>
-
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
     {% endif %}
-
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}
     {% endif %}
