@@ -1,0 +1,27 @@
+papers:
+  - text: >-
+      **Maximally Random Sortition**
+      Gabriel de Azevedo and Paul Gölz.
+      Working paper
+      [Code](https://github.com/gabrielmorete/maximally-random-sortition)
+
+extended_abstracts:
+  - text: >-
+      **An efficient algorithm to add up-links to a rooted tree to obtain a minimum cost 2-connected graph**
+      Gabriel de Azevedo and Yoshiko Wakabayashi
+      Brazilian Theory of Computation Meeting (ETC 24)
+      *Best Paper Award*
+      [Paper](https://doi.org/10.5753/etc.2024.2500)
+
+  - text: >-
+      **New reduction tests for the prize-collecting Steiner tree problem**
+      Gabriel de Azevedo and Carlos E. Ferreira 
+      Brazilian Theory of Computation Meeting (ETC 21)
+      [Paper (In portuguese)](https://doi.org/10.5753/etc.2021.16379)
+
+thesis:      
+  - text: >-
+      **On rounding algorithms for the 2-edge-connected spanning subgraph problem**
+      Gabriel de Azevedo.
+      Masters Thesis
+      [Text](https://www.teses.usp.br/teses/disponiveis/45/45134/tde-22012025-113608/publico/thesis.pdf)

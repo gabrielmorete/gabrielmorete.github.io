@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-sm-12 col-md-7">
+    <h2>Publications</h2>
+
+    <h3>Papers</h3>
+    {% for item in site.data.publications.papers %}
+      <div class="mb-3">
+        {{ item.text | markdownify }}
+      </div>
+    {% endfor %}
+
+    <h3>Extended Abstracts</h3>
+    {% for item in site.data.publications.extended_abstracts %}
+      <div class="mb-3">
+        {{ item.text | markdownify }}
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="col-sm-12 col-md-5">
+    <h2>News</h2>
+
+    {% for item in site.data.news.items %}
+      <div class="mb-3">
+        {{ item.text | markdownify }}
+      </div>
+    {% endfor %}
+  </div>
+</div>
