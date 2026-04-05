@@ -28,14 +28,19 @@ I'm a second year PhD student at the [School of Operations Research and Informat
 
 My main research interests are combinatorial optimization and social choice theory.
 
-Previously, I completed my undergrad in Molecular Sciences and my master's in Computer Science at the University of São Paulo. During my mastes, I was advised by [Yoshiko Wakabayashi](https://www.ime.usp.br/~yw/), and also spent a semmester at the University of Waterloo working with [Joseph Cheriyan](https://www.math.uwaterloo.ca/~jcheriya/).
+Previously, I completed my undergrad in Molecular Sciences and my master's in Computer Science at the University of São Paulo. During my master's, I was advised by [Yoshiko Wakabayashi](https://www.ime.usp.br/~yw/), and also spent a semester at the University of Waterloo working with [Joseph Cheriyan](https://www.math.uwaterloo.ca/~jcheriya/) on approximation algorithms.
 
+---
 
-**Contact Informatio:** 
-  294 Rhodes Hall
-  136 Hoy Rd
-  Ithaca, NY 14850, USA
-  gm587 [at] cornell [dot] edu
+**Contact Information:**
+<div style="margin-left: 1.2em; line-height: 1.8;">
+294 Rhodes Hall<br>
+136 Hoy Rd<br>
+Ithaca, NY 14850, USA<br>
+gm587 [at] cornell [dot] edu
+</div>
+
+---
 
 <div class="home-divider"></div>
 
