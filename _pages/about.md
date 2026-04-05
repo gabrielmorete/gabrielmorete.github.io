@@ -30,17 +30,13 @@ My main research interests are combinatorial optimization and social choice theo
 
 Previously, I completed my undergrad in Molecular Sciences and my master's in Computer Science at the University of São Paulo. During my master's, I was advised by [Yoshiko Wakabayashi](https://www.ime.usp.br/~yw/), and also spent a semester at the University of Waterloo working with [Joseph Cheriyan](https://www.math.uwaterloo.ca/~jcheriya/) on approximation algorithms.
 
----
-
 **Contact Information:**
-<div style="margin-left: 1.2em; line-height: 1.8;">
+<div style="margin-left: 1.2em; line-height: 1.6;">
 294 Rhodes Hall<br>
 136 Hoy Rd<br>
 Ithaca, NY 14850, USA<br>
 gm587 [at] cornell [dot] edu
 </div>
-
----
 
 <div class="home-divider"></div>
 
