@@ -1,28 +1,69 @@
-<div class="row">
-  <div class="col-sm-12 col-md-7">
-    <h2>Publications</h2>
+<div style="clear: both;"></div>
+<hr style="border: 0; border-top: 1px solid #d9d9d9; margin: 1.75rem 0 2rem 0;">
 
-    <h3>Papers</h3>
+<div class="pubnews-grid">
+  <div class="pubnews-col">
+    <div class="pubnews-heading">Papers</div>
+
     {% for item in site.data.publications.papers %}
-      <div class="mb-3 publication-entry">
-        {{ item.text | markdownify }}
+      <div class="pub-entry">
+        {% assign lines = item.text | split: "
+" %}
+        {% for line in lines %}
+          {% assign stripped = line | strip %}
+          {% unless stripped == "" %}
+            <div>{{ stripped | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+          {% endunless %}
+        {% endfor %}
       </div>
     {% endfor %}
 
-    <h3>Extended Abstracts</h3>
+    {% if site.data.publications.thesis %}
+      <div class="pubnews-heading" style="margin-top: 2rem;">Thesis</div>
+
+      {% for item in site.data.publications.thesis %}
+        <div class="pub-entry">
+          {% assign lines = item.text | split: "
+" %}
+          {% for line in lines %}
+            {% assign stripped = line | strip %}
+            {% unless stripped == "" %}
+              <div>{{ stripped | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+            {% endunless %}
+          {% endfor %}
+        </div>
+      {% endfor %}
+    {% endif %}
+
+    <div class="pubnews-heading" style="margin-top: 2rem;">Extended Abstracts</div>
+
     {% for item in site.data.publications.extended_abstracts %}
-      <div class="mb-3 publication-entry">
-        {{ item.text | markdownify }}
+      <div class="pub-entry">
+        {% assign lines = item.text | split: "
+" %}
+        {% for line in lines %}
+          {% assign stripped = line | strip %}
+          {% unless stripped == "" %}
+            <div>{{ stripped | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+          {% endunless %}
+        {% endfor %}
       </div>
     {% endfor %}
   </div>
 
-  <div class="col-sm-12 col-md-5">
-    <h2>News</h2>
+  <div class="pubnews-col">
+    <div class="pubnews-heading">News</div>
 
     {% for item in site.data.news.items %}
-      <div class="mb-3 news-entry">
-        {{ item.text | markdownify }}
+      <div class="news-entry">
+        {% assign lines = item.text | split: "
+" %}
+        {% for line in lines %}
+          {% assign stripped = line | strip %}
+          {% unless stripped == "" %}
+            <div>{{ stripped | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+          {% endunless %}
+        {% endfor %}
       </div>
     {% endfor %}
   </div>
