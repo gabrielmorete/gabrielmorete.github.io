@@ -4,14 +4,14 @@
 
     <h3>Papers</h3>
     {% for item in site.data.publications.papers %}
-      <div class="mb-3">
+      <div class="mb-3 publication-entry">
         {{ item.text | markdownify }}
       </div>
     {% endfor %}
 
     <h3>Extended Abstracts</h3>
     {% for item in site.data.publications.extended_abstracts %}
-      <div class="mb-3">
+      <div class="mb-3 publication-entry">
         {{ item.text | markdownify }}
       </div>
     {% endfor %}
@@ -21,7 +21,7 @@
     <h2>News</h2>
 
     {% for item in site.data.news.items %}
-      <div class="mb-3">
+      <div class="mb-3 news-entry">
         {{ item.text | markdownify }}
       </div>
     {% endfor %}
