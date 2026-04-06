@@ -15,27 +15,28 @@ layout: default
   </header>
   <article>
     <div style="padding-left: 0.8cm; padding-right: 0.8cm;">
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}" style="width: 45% !important;">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
+      <div style="display: flex; flex-direction: row-reverse; gap: 1.5rem; align-items: flex-start;">
+        {% if page.profile %}
+          <div style="flex-shrink: 0; max-width: 280px;">
+            {% if page.profile.image %}
+              {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+              {% if page.profile.image_circular %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+              {% else %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+              {% endif %}
+              {%
+                include figure.liquid loading="eager" path=profile_image_path class=profile_image_class alt=page.profile.image
+                cache_bust=true
+              %}
+            {% endif %}
+            {% if page.profile.more_info %}
+              <div class="more-info">{{ page.profile.more_info }}</div>
+            {% endif %}
+          </div>
         {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
+        <div style="flex: 1;">{{ content }}</div>
       </div>
-    {% endif %}
-    <div class="clearfix">{{ content }}</div>
     </div>
     <hr style="border: none; border-top: 1px solid #ddd; margin: 2rem 0.8cm;">
     <div style="padding-left: 1.5cm;">
