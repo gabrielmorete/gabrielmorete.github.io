@@ -1,9 +1,11 @@
+papers:
   - text: |
       **[Maximally Random Sortition](https://arxiv.org/abs/2604.02712)**
       Gabriel de Azevedo and [Paul Gölz](https://paulgoelz.de/).
       Working paper.
       [[Code](https://github.com/gabrielmorete/maximally-random-sortition)]
 
+thesis:
   - text: |
       **[On rounding algorithms for the 2-edge-connected spanning subgraph problem](https://www.teses.usp.br/teses/disponiveis/45/45134/tde-22012025-113608/publico/thesis.pdf)**
       Gabriel de Azevedo.
