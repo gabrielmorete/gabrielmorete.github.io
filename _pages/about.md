@@ -38,7 +38,3 @@ Previously, I completed my undergrad in Molecular Sciences and my master's in Co
   gm587 [at] cornell [dot] edu
   </div>
 </div>
-
-<div class="home-divider"></div>
-
-{% include publications_news.liquid %}

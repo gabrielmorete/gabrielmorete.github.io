@@ -17,7 +17,7 @@ layout: default
     <div style="padding-left: 0.8cm; padding-right: 0.8cm;">
       <div style="display: flex; flex-direction: row-reverse; gap: 1.5rem; align-items: flex-start;">
         {% if page.profile %}
-          <div style="flex-shrink: 0; width: 220px; max-width: 280px;">
+          <div style="flex-shrink: 0; width: 220px; max-width: 220px;">
             {% if page.profile.image %}
               {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
               {% if page.profile.image_circular %}
@@ -40,37 +40,38 @@ layout: default
     </div>
     <hr style="border: none; border-top: 1px solid #ddd; margin: 2rem 0.8cm;">
     <div style="padding-left: 1.5cm;">
-    <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
-    <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% social_links %}</div>
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
-    {% endif %}
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
-    {% endif %}
+      {% include publications_news.liquid %}
+      <!-- News -->
+      {% if page.announcements and page.announcements.enabled %}
+        <h2>
+          <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        </h2>
+        {% include news.liquid limit=true %}
+      {% endif %}
+      <!-- Latest posts -->
+      {% if page.latest_posts and page.latest_posts.enabled %}
+        <h2>
+          <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        </h2>
+        {% include latest_posts.liquid %}
+      {% endif %}
+      <!-- Selected papers -->
+      {% if page.selected_papers %}
+        <h2>
+          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        </h2>
+        {% include selected_papers.liquid %}
+      {% endif %}
+      <!-- Social -->
+      {% if page.social %}
+        <div class="social">
+          <div class="contact-icons">{% social_links %}</div>
+          <div class="contact-note">{{ site.contact_note }}</div>
+        </div>
+      {% endif %}
+      {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
+        {% include newsletter.liquid center=true %}
+      {% endif %}
     </div>
   </article>
 </div>
