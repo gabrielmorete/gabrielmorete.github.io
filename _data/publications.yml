@@ -13,7 +13,7 @@ thesis:
 
 extended_abstracts:
   - text: |
-      **[An efficient algorithm to add up-links to a rooted tree to obtain a minimum cost 2-connected graph]((https://doi.org/10.5753/etc.2024.2500))**
+      **[An efficient algorithm to add up-links to a rooted tree to obtain a minimum cost 2-connected graph](https://doi.org/10.5753/etc.2024.2500)**
       Gabriel de Azevedo and [Yoshiko Wakabayashi](https://www.ime.usp.br/~yw/).
       Brazilian Theory of Computation Meeting (ETC 24).
       *Best Paper Award*.
