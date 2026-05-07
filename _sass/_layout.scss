@@ -64,6 +64,29 @@ body.sticky-bottom-footer {
   flex: 1;
 }
 
+.pubnews-section {
+  padding-left: 0.8cm; // aligns with the name/about text block
+}
+
+.pubnews-subheading,
+.pub-entry,
+.news-entry {
+  margin-left: 0.7cm; // keeps the actual entries shifted right
+}
+
+@media (max-width: 767px) {
+  .pubnews-section {
+    padding-left: 0;
+  }
+
+  .pubnews-subheading,
+  .pub-entry,
+  .news-entry {
+    margin-left: 0;
+  }
+}
+
+
 // Mobile layout: header/name, picture, text, then rest.
 @media (max-width: 767px) {
   .about-intro {
