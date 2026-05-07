@@ -41,3 +41,50 @@ body.sticky-bottom-footer {
   }
 }
 
+// About page intro layout
+.about-intro {
+  padding-left: 0.8cm;
+  padding-right: 0.8cm;
+}
+
+.about-intro-row {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.about-profile {
+  flex-shrink: 0;
+  width: 220px;
+  max-width: 220px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+// Mobile layout: header/name, picture, text, then rest.
+@media (max-width: 767px) {
+  .about-intro {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .about-intro-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .about-profile {
+    width: 100%;
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+}
+

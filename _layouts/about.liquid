@@ -14,10 +14,10 @@ layout: default
     <p class="desc">{{ page.subtitle }}</p>
   </header>
   <article>
-    <div style="padding-left: 0.8cm; padding-right: 0.8cm;">
-      <div style="display: flex; flex-direction: row-reverse; gap: 1.5rem; align-items: flex-start;">
+    <div class="about-intro">
+      <div class="about-intro-row">
         {% if page.profile %}
-          <div style="flex-shrink: 0; width: 220px; max-width: 220px;">
+          <div class="about-profile">
             {% if page.profile.image %}
               {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
               {% if page.profile.image_circular %}
@@ -35,7 +35,7 @@ layout: default
             {% endif %}
           </div>
         {% endif %}
-        <div style="flex: 1;">{{ content }}</div>
+        <div class="about-text">{{ content }}</div>
       </div>
     </div>
     <hr style="border: none; border-top: 1px solid #ddd; margin: 2rem 0.8cm;">
