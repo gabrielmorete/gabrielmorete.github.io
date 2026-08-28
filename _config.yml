@@ -36,7 +36,6 @@ keep_files:
 plugins:
   - jekyll-cache-bust
   - jekyll-imagemagick
-  - jekyll-link-attributes
   - jekyll-minifier
   - jekyll-sitemap
   - jekyll-terser
@@ -50,11 +49,6 @@ jekyll-minifier:
 terser:
   compress:
     drop_console: true
-
-external_links:
-  enabled: true
-  rel: external nofollow noopener
-  target: _blank
 
 imagemagick:
   enabled: true

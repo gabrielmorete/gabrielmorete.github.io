@@ -1,24 +1,24 @@
 papers:
   - text: |
-      **[Maximally Random Sortition](https://arxiv.org/abs/2604.02712)**
-      Gabriel de Azevedo and [Paul Gölz](https://paulgoelz.de/).
-      [EC 2026](https://ec26.sigecom.org/)
-      [[Code](https://github.com/gabrielmorete/maximally-random-sortition)]
+      **[Maximally Random Sortition](https://arxiv.org/abs/2604.02712){:target="_blank" rel="external nofollow noopener"}**
+      Gabriel de Azevedo and [Paul Gölz](https://paulgoelz.de/){:target="_blank" rel="external nofollow noopener"}.
+      [EC 2026](https://ec26.sigecom.org/){:target="_blank" rel="external nofollow noopener"}
+      [[Code](https://github.com/gabrielmorete/maximally-random-sortition){:target="_blank" rel="external nofollow noopener"}]
 
 thesis:
   - text: |
-      **[On rounding algorithms for the 2-edge-connected spanning subgraph problem](https://www.teses.usp.br/teses/disponiveis/45/45134/tde-22012025-113608/publico/thesis.pdf)**
+      **[On rounding algorithms for the 2-edge-connected spanning subgraph problem](https://www.teses.usp.br/teses/disponiveis/45/45134/tde-22012025-113608/publico/thesis.pdf){:target="_blank" rel="external nofollow noopener"}**
       Gabriel de Azevedo.
       Masters Thesis.
 
 extended_abstracts:
   - text: |
-      **[An efficient algorithm to add up-links to a rooted tree to obtain a minimum cost 2-connected graph](https://doi.org/10.5753/etc.2024.2500)**
-      Gabriel de Azevedo and [Yoshiko Wakabayashi](https://www.ime.usp.br/~yw/).
+      **[An efficient algorithm to add up-links to a rooted tree to obtain a minimum cost 2-connected graph](https://doi.org/10.5753/etc.2024.2500){:target="_blank" rel="external nofollow noopener"}**
+      Gabriel de Azevedo and [Yoshiko Wakabayashi](https://www.ime.usp.br/~yw/){:target="_blank" rel="external nofollow noopener"}.
       Brazilian Theory of Computation Meeting (ETC 24).
       *Best Paper Award*.
 
   - text: |
-      **[New reduction tests for the prize-collecting Steiner tree problem](https://doi.org/10.5753/etc.2021.16379)**
-      Gabriel de Azevedo and [Carlos E. Ferreira](https://www.ime.usp.br/~cef/).
+      **[New reduction tests for the prize-collecting Steiner tree problem](https://doi.org/10.5753/etc.2021.16379){:target="_blank" rel="external nofollow noopener"}**
+      Gabriel de Azevedo and [Carlos E. Ferreira](https://www.ime.usp.br/~cef/){:target="_blank" rel="external nofollow noopener"}.
       Brazilian Theory of Computation Meeting (ETC 21).
