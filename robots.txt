@@ -1,4 +1,1 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://gabrielmorete.github.io/sitemap.xml
+User-agent: * Disallow: Sitemap: https://gabrielmazevedo.com/sitemap.xml
