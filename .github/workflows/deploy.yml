@@ -25,9 +25,15 @@ jobs:
           bundler-cache: true
       - name: Build
         run: |
+          set -o pipefail
           sudo apt-get update && sudo apt-get install -y imagemagick
           export JEKYLL_ENV=production
-          bundle exec jekyll build
+          build_log="$(mktemp)"
+          if ! bundle exec jekyll build --trace 2>&1 | tee "$build_log"; then
+            build_error="$(tail -n 30 "$build_log" | tr '\n' ' ' | sed 's/%/%25/g')"
+            printf '::error title=Jekyll build failed::%s\n' "$build_error"
+            exit 1
+          fi
       - name: Purge unused CSS
         run: |
           npm install -g purgecss
