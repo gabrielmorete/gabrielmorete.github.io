@@ -5,11 +5,11 @@
     <div class="pubnews-subheading">Papers</div>
     {% for item in site.data.publications.papers %}
       <div class="pub-entry">
-        {% assign lines = item.text | split: "
-" %}
+        {% assign lines = item.text | split: '
+' %}
         {% for line in lines %}
           {% assign stripped = line | strip %}
-          {% unless stripped == "" %}
+          {% unless stripped == '' %}
             <div>{{ stripped | markdownify | remove: '<p>' | remove: '</p>' }}</div>
           {% endunless %}
         {% endfor %}
@@ -20,11 +20,11 @@
       <div class="pubnews-subheading">Thesis</div>
       {% for item in site.data.publications.thesis %}
         <div class="pub-entry">
-          {% assign lines = item.text | split: "
-" %}
+          {% assign lines = item.text | split: '
+' %}
           {% for line in lines %}
             {% assign stripped = line | strip %}
-            {% unless stripped == "" %}
+            {% unless stripped == '' %}
               <div>{{ stripped | markdownify | remove: '<p>' | remove: '</p>' }}</div>
             {% endunless %}
           {% endfor %}
@@ -35,11 +35,11 @@
     <div class="pubnews-subheading">Extended Abstracts</div>
     {% for item in site.data.publications.extended_abstracts %}
       <div class="pub-entry">
-        {% assign lines = item.text | split: "
-" %}
+        {% assign lines = item.text | split: '
+' %}
         {% for line in lines %}
           {% assign stripped = line | strip %}
-          {% unless stripped == "" %}
+          {% unless stripped == '' %}
             <div>{{ stripped | markdownify | remove: '<p>' | remove: '</p>' }}</div>
           {% endunless %}
         {% endfor %}
@@ -52,11 +52,11 @@
 
     {% for item in site.data.news.items %}
       <div class="news-entry">
-        {% assign lines = item.text | split: "
-" %}
+        {% assign lines = item.text | split: '
+' %}
         {% for line in lines %}
           {% assign stripped = line | strip %}
-          {% unless stripped == "" %}
+          {% unless stripped == '' %}
             <div>{{ stripped | markdownify | remove: '<p>' | remove: '</p>' }}</div>
           {% endunless %}
         {% endfor %}

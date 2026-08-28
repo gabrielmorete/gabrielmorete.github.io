@@ -9,19 +9,6 @@ profile:
   image: me.jpg
   image_circular: false
   more_info:
-
-selected_papers: false
-social: false
-
-announcements:
-  enabled: false
-  scrollable: true
-  limit: 5
-
-latest_posts:
-  enabled: false
-  scrollable: true
-  limit: 3
 ---
 
 I'm a second-year PhD student at the [School of Operations Research and Information Engineering](https://www.duffield.cornell.edu/orie/) at Cornell, where I am fortunate to be advised by [Paul Gölz](https://paulgoelz.de/).
