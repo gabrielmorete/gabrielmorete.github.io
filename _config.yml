@@ -2,9 +2,23 @@ title: Gabriel M. de Azevedo
 first_name: Gabriel
 middle_name:
 last_name: Morete de Azevedo
-description: Personal academic website of Gabriel M. de Azevedo.
+description: Academic website of Gabriel Morete de Azevedo, who publishes as Gabriel de Azevedo. PhD student at Cornell ORIE working on social choice, sortition, and combinatorial optimization.
 keywords: social choice, sortition, combinatorial optimization
 lang: en
+
+seo:
+  title: Gabriel Morete de Azevedo | Gabriel de Azevedo
+  name: Gabriel Morete de Azevedo
+  alternate_names:
+    - Gabriel de Azevedo
+    - Gabriel M. de Azevedo
+  image: /assets/img/me.jpg
+  job_title: PhD student
+  affiliation:
+    name: Cornell University
+    url: https://www.cornell.edu/
+  same_as:
+    - https://github.com/gabrielmorete
 
 url: https://gabrielmazevedo.com
 baseurl:
@@ -45,6 +59,8 @@ sass:
 
 jekyll-minifier:
   compress_javascript: false
+  exclude:
+    - robots.txt
 
 terser:
   compress:

@@ -10,6 +10,15 @@
   crossorigin="anonymous"
 ></script>
 
+<script>
+  for (const link of document.querySelectorAll('a[href^="http://"], a[href^="https://"]')) {
+    if (new URL(link.href).origin !== window.location.origin) {
+      link.target = '_blank';
+      link.rel = 'external noopener';
+    }
+  }
+</script>
+
 {% if site.enable_progressbar %}
   <script defer src="{{ '/assets/js/progress-bar.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}

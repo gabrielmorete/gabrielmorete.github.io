@@ -1,15 +1,89 @@
-{% capture author_name %}{{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}{% endcapture %}
+{% assign canonical_url = page.url | replace: 'index.html', '' | absolute_url %}
+{% assign profile_url = '/' | absolute_url %}
+{% assign profile_image_url = site.seo.image | absolute_url %}
+{% assign meta_description = page.description | default: site.description %}
+{% if page.url == '/' %}
+  {% assign meta_title = site.seo.title %}
+{% else %}
+  {% capture meta_title %}{{ page.title }} | {{ site.title }}{% endcapture %}
+{% endif %}
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>
-  {% if page.url == '/' %}
-    {{ site.title }}
-  {% else %}
-    {{ page.title }} | {{ site.title }}
-  {% endif %}
-</title>
-<meta name="author" content="{{ author_name }}">
-<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-<meta name="keywords" content="{{ site.keywords }}">
+<title>{{ meta_title | strip }}</title>
+<meta name="author" content="{{ site.seo.name }}">
+<meta name="description" content="{{ meta_description | strip }}">
+{% if page.noindex %}
+  <meta name="robots" content="noindex, follow">
+{% else %}
+  <meta name="robots" content="index, follow, max-image-preview:large">
+{% endif %}
+
+<meta property="og:type" content="{% if page.url == '/' %}profile{% else %}website{% endif %}">
+<meta property="og:title" content="{{ meta_title | strip }}">
+<meta property="og:description" content="{{ meta_description | strip }}">
+<meta property="og:url" content="{{ canonical_url }}">
+<meta property="og:site_name" content="{{ site.seo.name }}">
+<meta property="og:image" content="{{ profile_image_url }}">
+<meta property="og:image:alt" content="Portrait of {{ site.seo.name }}">
+{% if page.url == '/' %}
+  <meta property="profile:first_name" content="{{ site.first_name }}">
+  <meta property="profile:last_name" content="{{ site.last_name }}">
+{% endif %}
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ meta_title | strip }}">
+<meta name="twitter:description" content="{{ meta_description | strip }}">
+<meta name="twitter:image" content="{{ profile_image_url }}">
+<meta name="twitter:image:alt" content="Portrait of {{ site.seo.name }}">
+
+{% if page.url == '/' %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfilePage",
+          "@id": {{ profile_url | append: '#profile' | jsonify }},
+          "url": {{ profile_url | jsonify }},
+          "name": {{ site.seo.title | jsonify }},
+          "description": {{ site.description | jsonify }},
+          "mainEntity": {
+            "@id": {{ profile_url | append: '#person' | jsonify }}
+          },
+          "isPartOf": {
+            "@id": {{ profile_url | append: '#website' | jsonify }}
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": {{ profile_url | append: '#person' | jsonify }},
+          "name": {{ site.seo.name | jsonify }},
+          "alternateName": {{ site.seo.alternate_names | jsonify }},
+          "url": {{ profile_url | jsonify }},
+          "image": {{ profile_image_url | jsonify }},
+          "description": {{ site.description | jsonify }},
+          "jobTitle": {{ site.seo.job_title | jsonify }},
+          "affiliation": {
+            "@type": "CollegeOrUniversity",
+            "name": {{ site.seo.affiliation.name | jsonify }},
+            "url": {{ site.seo.affiliation.url | jsonify }}
+          },
+          "knowsAbout": {{ site.keywords | split: ', ' | jsonify }},
+          "sameAs": {{ site.seo.same_as | jsonify }}
+        },
+        {
+          "@type": "WebSite",
+          "@id": {{ profile_url | append: '#website' | jsonify }},
+          "url": {{ profile_url | jsonify }},
+          "name": {{ site.seo.name | jsonify }},
+          "alternateName": {{ site.seo.alternate_names | jsonify }},
+          "publisher": {
+            "@id": {{ profile_url | append: '#person' | jsonify }}
+          }
+        }
+      ]
+    }
+  </script>
+{% endif %}
