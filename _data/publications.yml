@@ -1,5 +1,10 @@
 papers:
   - text: |
+      **[Adaptivity Gaps for Influence Maximization: Percolation and Depletion](https://gabrielmazevedo.com/assets/manuscripts/influence_maximization.pdf)**
+      Gabriel de Azevedo and [Ulysse Hennebelle](https://ulyssehennebelle.github.io/)
+      Working paper
+
+  - text: |
       **[Condorcet-Winning Sets and Peer Selection in Planar Metric Elections](https://arxiv.org/abs/2608.27653)**
       Gabriel de Azevedo and [Ulysse Hennebelle](https://ulyssehennebelle.github.io/)
       Working paper
